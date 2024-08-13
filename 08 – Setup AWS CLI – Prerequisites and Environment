@@ -1,0 +1,15 @@
+#craete group and give it permision to resources, then craete new user and add it on the group + craeate access key& secret key to this user download and sve it.
+#on linuk run these command to To install the AWS CLI
+#https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+#congure it https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+aws configure
+aws configure list
+aws configure list-profiles
+
+#example
+aws iam list-groups
